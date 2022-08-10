@@ -42,7 +42,7 @@ def select_poli(win):
     return sel
 
 
-def printing(x1, y1, x2, y2, file_name):
+def printing(x1, y1, x2, y2, file_name, adraw):
     """ (float, float, float, float, str) -> None
     Printing drawing and saving it with file_name
     """
@@ -162,6 +162,6 @@ for cor in select_window:
     y2 = cor[5]
     name = object_selection_text(select_text, x1, y1, x2, y2)
     file_name = savedirectory + '/' + name + '.pdf'
-    c = printing(x1, y1, x2, y2, file_name)
+    c = printing(x1, y1, x2, y2, file_name, adraw)
     time.sleep(2)
 pgui.alert('Job finihed')
