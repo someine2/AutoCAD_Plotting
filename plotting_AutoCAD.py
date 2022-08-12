@@ -31,8 +31,7 @@ def select_poli(win):
     """
     acad = pyautocad.Autocad(create_if_not_exists=True)
     win.minimize()
-    win.maximize()
-    win.minimize()
+    win.maximize()    
     time.sleep(1)
     pgui.alert("Виберіть полінії, що відповідає розмірам формату листа та назви і номери листів. "
                "Після вибору натисніть Enter")
